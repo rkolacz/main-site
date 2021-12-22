@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-color: #333;
+  --light-color: #fff;
+  --turq-color: #40e0d0;
+  --light-turq-color: #66e6d9;
+  --dark-turq-color: #39c9bb;
+  --warning-color: #ff0000;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--light-color);
+}
+
+h1 {
+  color: var(--dark-color);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  font-size: 20px;
+}
