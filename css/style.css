@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 *,
 *::before,
@@ -8,7 +15,7 @@
 
 :root {
   --dark-color: #333;
-  --light-color: #fff;
+  --light-color: #eee;
   --turq-color: #40e0d0;
   --light-turq-color: #66e6d9;
   --dark-turq-color: #39c9bb;
@@ -16,22 +23,74 @@
 }
 
 body {
+  /* font-family: "Playfair Display", serif; */
+  font-family: "EB Garamond", serif;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  margin-top: 120px;
-  font-family: "Montserrat", sans-serif;
-  background-color: var(--light-color);
+  align-items: center;
 }
 
 h1 {
   color: var(--dark-color);
-  margin-bottom: 20px;
-  text-transform: uppercase;
+  font-size: 2rem;
 }
 
-button {
+/* button {
   width: 50px;
   height: 50px;
   margin: 0 10px;
   font-size: 20px;
+} */
+
+.navi {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 50px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin-right: 30px;
+  font-size: 1.1em;
+}
+
+.menu__el {
+  margin-right: 30px;
+}
+
+.logo {
+  list-style: none;
+}
+
+.logo__st {
+  font-size: 2rem;
+}
+
+.logo__nd {
+  font-size: 1rem;
+}
+
+.text-box {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+a {
+  color: #333;
+  font-weight: 700;
 }
