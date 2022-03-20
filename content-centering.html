@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/f051435000.js" crossorigin="anonymous"></script>
+    <title>Testowanie nowych rozwiązań - content centering</title>
+</head>
+
+<body>
+    <header></header>
+    <nav class="navi">
+        <ul class="logo">
+            <a href="#">
+                <li class="logo__st">rkołacz</li>
+            </a>
+            <li class="logo__nd">testy</li>
+        </ul>
+        <ul class="menu">
+            <a href="#">
+                <li class="menu__el">html</li>
+            </a>
+            <a href="#">
+                <li class="menu__el">css</li>
+            </a>
+            <a href="#">
+                <li class="menu__el">js</li>
+            </a>
+        </ul>
+    </nav>
+    <div id="wrapper">
+        <main>
+            <h1>Środkowanie zawartości #1</h1>
+            <p>za pomocą margin left i right</p>
+            <h2>HTML</h2>
+            <p>Kod HTML powienien mieć strukturę</p>
+            <p class="code"><span class="code--greaterlower">&lt;</span>body<span class="code--greaterlower">&gt;</span>
+                <br>
+                &nbsp;&nbsp;<span class="code--greaterlower">&lt;</span>div id=<span
+                    class="code--idclass">"wrapper"</span><span class="code--greaterlower">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="code--normalp">...tutaj znajduje sie treść którą chcesz
+                    wyśrodkować...</span><br>
+                &nbsp;&nbsp;<span class="code--greaterlower">&lt;</span>/div<span class="code--greaterlower">&gt;</span>
+                <br>
+                <span class="code--greaterlower">&lt;</span>/body<span class="code--greaterlower">&gt;</span>
+            </p>
+            <h2>CSS</h2>
+            <p>Reguły CSS dla kontenera "wrapper". Wartość "width" według potrzeb, właściwości margin-left i
+                margin-right otrzymują wartość auto.</p>
+            <p>Kod CSS wygląda tak:</p>
+            <p class="code">
+
+                <span class="code--idclass">#wrapper</span> <span class="code--greaterlower">{</span>
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                <span class="code--greaterlower">}</span>
+
+            </p>
+
+        </main>
+    </div>
+    <footer></footer>
+</body>
+
+</html>

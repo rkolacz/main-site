@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/f051435000.js" crossorigin="anonymous"></script>
+    <title>Testowanie nowych rozwiązań - forms & inputs</title>
+</head>
+
+<body>
+    <header></header>
+    <nav class="navi">
+        <ul class="logo">
+            <a href="#">
+                <li class="logo__st">rkołacz</li>
+            </a>
+            <li class="logo__nd">testy</li>
+        </ul>
+        <ul class="menu">
+            <a href="#">
+                <li class="menu__el">html</li>
+            </a>
+            <a href="#">
+                <li class="menu__el">css</li>
+            </a>
+            <a href="#">
+                <li class="menu__el">js</li>
+            </a>
+        </ul>
+    </nav>
+    <main>
+        <div class="inputbox">
+            <h1>Rodzaje inputów</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, ratione quos culpa nam itaque laborum
+                sapiente tenetur incidunt et, adipisci asperiores aspernatur, minima laboriosam. Praesentium ut omnis
+                nesciunt numquam laboriosam.</p>
+            <p class="inputbox__source">źródło</p>
+            <!-- TEXT -->
+            <h2>Input text</h2>
+
+            <h2>HTML</h2>
+            <p class="code">
+
+                <span class="code--greaterlower">&lt;</span>label for=<span class="code--idclass">"name"</span><span
+                    class="code--greaterlower">&gt;</span><span class="code--normalp">imię</span><span
+                    class="code--greaterlower">&lt;</span>/label<span class="code--greaterlower">&gt;</span><br>
+                <span class="code--greaterlower">&lt;</span>input type=<span class="code--idclass">"text"</span>
+                id=<span class="code--idclass">"name"</span> name=<span class="code--idclass">"name"</span><span
+                    class="code--greaterlower">&gt;</span><br>
+            </p>
+            <h2>Rezultat</h2>
+            <div class="inputbox__inp">
+
+                <label for="name">imię</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <!-- EMAIL -->
+            <h2>Input email z placeholderem</h2>
+
+            <h2>HTML</h2>
+            <p class="code">
+                <span class="code--greaterlower">&lt;</span>label for="email"<span
+                    class="code--greaterlower">&gt;</span><span class="code--normalp">email</span><span
+                    class="code--greaterlower">&lt;</span>/label<span class="code--greaterlower">&gt;</span><br>
+                <span class="code--greaterlower">&lt;</span>input type=<span class="code--idclass">"email"</span>
+                id=<span class="code--idclass">"email"</span> name=<span class="code--idclass">"email"</span>
+                placeholder=<span class="code--idclass">"Wpisz swój email"</span><span
+                    class="code--greaterlower">&gt;</span>
+            </p>
+            <h2>Rezultat</h2>
+            <div class="inputbox__inp">
+
+                <label for="email">email</label>
+                <input type="email" id="email" name="email" placeholder="Wpisz swój email">
+            </div>
+
+            <!-- TEXTAREA -->
+            <h2>Input textarea</h2>
+            <h2>HTML</h2>
+            <p class="code">
+                <span class="code--greaterlower">&lt;</span>textarea name=<span class="code--idclass">"message"</span>
+                id=<span class="code--idclass">"message"</span> cols=<span class="code--idclass">"30"</span> rows=<span
+                    class="code--idclass">"10"</span><span class="code--greaterlower">&gt;</span><span
+                    class="code--greaterlower">&lt;</span>/textarea<span class="code--greaterlower">&gt;</span>
+            </p>
+            <h2>Rezultat</h2>
+            <div class="inputbox__inp">
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+
+
+            <!-- SELECT -->
+            <div class="inputbox__inp">
+                <h2>Input select</h2>
+                <h2>HTML</h2>
+                <p class="code">
+                    <span class="code--greaterlower">&lt;</span>label for=<span class="code--idclass">"sex"</span><span
+                        class="code--greaterlower">&gt;</span><span class="code--normalp">płeć</span><span
+                        class="code--greaterlower">&lt;</span>/label<span class="code--greaterlower">&gt;</span><br>
+                    <span class="code--greaterlower">&lt;</span>select name=<span class="code--idclass">"sex"</span>
+                    id=<span class="code--idclass">"sex"</span><span class="code--greaterlower">&gt;</span><br>
+                    &nbsp;&nbsp;<span class="code--greaterlower">&lt;</span>option value=<span
+                        class="code--idclass">"male"</span><span class="code--greaterlower">&gt;</span><span
+                        class="code--normalp">mężczyzna</span><span class="code--greaterlower">&lt;</span>/option<span
+                        class="code--greaterlower">&gt;</span><br>
+                    &nbsp;&nbsp;<span class="code--greaterlower">&lt;</span>option value=<span
+                        class="code--idclass">"female"</span><span class="code--greaterlower">&gt;</span><span
+                        class="code--normalp">kobieta</span><span class="code--greaterlower">&lt;</span>/option<span
+                        class="code--greaterlower">&gt;</span><br>
+                    &nbsp;&nbsp;<span class="code--greaterlower">&lt;</span>option value=<span
+                        class="code--idclass">"other"</span><span class="code--greaterlower">&gt;</span><span
+                        class="code--normalp">inna</span><span class="code--greaterlower">&lt;</span>/option<span
+                        class="code--greaterlower">&gt;</span><br>
+                    <span class="code--greaterlower">&lt;</span>/select<span class="code--greaterlower">&gt;</span>
+                </p>
+                <h2>Rezultat</h2>
+                <label for="sex">płeć</label>
+                <select name="sex" id="sex">
+                    <option value="male">mężczyzna</option>
+                    <option value="female">kobieta</option>
+                    <option value="other">inna</option>
+                </select>
+            </div>
+            <!-- NUMBER -->
+            <div class="inputbox__inp">
+                <h2>Input number</h2>
+                <h2>HTML</h2>
+                <p class="code">
+                    <span class="code--greaterlower">&lt;</span>label for=<span class="code--idclass">"age"</span><span
+                        class="code--greaterlower">&gt;</span><span class="code--normalp">wiek</span><span
+                        class="code--greaterlower">&lt;</span>/label<span class="code--greaterlower">&gt;</span><br>
+                    <span class="code--greaterlower">&lt;</span>input type=<span class="code--idclass">"number"</span>
+                    name=<span class="code--idclass">"age"</span> id=<span class="code--idclass">"age"</span><span
+                        class="code--greaterlower">&gt;</span>
+                </p>
+                <h2>Rezultat</h2>
+                <label for="age">wiek</label>
+                <input type="number" name="age" id="age">
+
+            </div>
+            <!-- DATE -->
+            <div class="inputbox__inp">
+                <h2>Input date</h2>
+                <h2>HTML</h2>
+                <label for="birthdate">data urodzenia</label>
+                <input type="date" name="birthdate" id="birthdate">
+
+                <h2>Rezultat</h2>
+                <label for="birthdate">data urodzenia</label>
+                <input type="date" name="birthdate" id="birthdate">
+            </div>
+            <!-- RADIO -->
+            <div class="inputbox__inp">
+                <h2>Input radio</h2>
+                <label for="membership">pakiet</label>
+                <input type="radio" name="membership" value="simple" id="membership">podstawowy
+                <input type="radio" name="membership" value="medium" id="membership">średni
+                <input type="radio" name="membership" value="high" id="membership">zaawansowany
+            </div>
+            <!-- CHECKBOX -->
+            <div class="inputbox__inp">
+                <h2>Input checkbox</h2>
+                <label for="membership">dodatki</label>
+                <input type="checkbox" name="adds" value="first">pierwszy
+                <input type="checkbox" name="adds" value="second">drugi
+                <input type="checkbox" name="adds" value="third">trzeci
+            </div>
+            <!-- SUBMIT -->
+            <div class="inputbox__inp">
+                <h2>Input submit</h2>
+                <input type="submit" value="wyślij">
+            </div>
+            <!-- RESET - does't working (and i dont know why) -->
+            <div class="inputbox__inp">
+                <h2>Button reset</h2>
+                <button type="reset">reset</button>
+            </div>
+            
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
